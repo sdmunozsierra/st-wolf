@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+char font[] = "Hack-Regular:size=11:antialias=true:autohint=true";
 int borderpx = 2;
 
 /*
@@ -84,24 +84,35 @@ static unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	/* "#ff2c4b" #Red taffy 
+set $c_rose		"#ff9eb8" #Rose Dress
+set $c_lime 	"#aeee00" #Green lime
+set $c_brown 	"#b88853" #Brown from clouds
+set $c_coffee 	"#c7915b" #Brown coffee
+set $c_nescafe 	"#88633f" #Dark coffee
+set $c_blue 	"#0a9dff" #Blue 
+set $c_azul 	"#8cffba" #Blue aqua
+set $c_orang 	"#ffa724" #Orange
+set $c_white 	"#f8f6f2" #Plain white
+dale=#fade3e
+8 normal colors */
+	"#141413", 		/*Gray blackest gravel*/
+	"#aeee00", 		/*Lime */ 
+	"#ffa724",		//Orange
+	"#fade3e", 		//yellow
+	"#0a9dff",		//blue
+	"#ff9eb8",		//Rose
+	"#8cffba",		//Aqua
+	"#f8f6f2", 		//White
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
+	"#998f84",		//Light gravel
+	"#8cffba", 		//Salt water red Blue aqua
+	"#88633f",
+	"#b88853", 		//Brown
+	"#42FDB6",		//Lower Lime (LS DIRECTORIES)
+	"#f4cf86",		//Beige (Dirty Blonde)
+	"#ff2c4b",		//red 
 	"white",
 
 	[255] = 0,
@@ -117,8 +128,8 @@ const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 256;
+unsigned int defaultbg = 234;
+unsigned int defaultcs = 105;
 unsigned int defaultrcs = 257;
 
 /*
